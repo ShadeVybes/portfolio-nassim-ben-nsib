@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cybernetic Architect Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* Cybernetic Dark Theme */
+    --background: 240 10% 4%;  /* Deep charcoal #0A0A0A */
+    --foreground: 180 100% 90%; /* Light cyan for text */
+
+    --card: 240 8% 8%;  /* Slightly lighter than background */
+    --card-foreground: 180 100% 90%;
+
+    --popover: 240 8% 6%;
+    --popover-foreground: 180 100% 90%;
+
+    /* Neon Electric Blue Primary */
+    --primary: 187 100% 50%;  /* Electric blue #00F0FF */
+    --primary-foreground: 240 10% 4%;
+    --primary-glow: 187 100% 70%;
+
+    /* Neon Magenta Secondary */
+    --secondary: 285 100% 50%;  /* Deep magenta #A300FF */
+    --secondary-foreground: 180 100% 90%;
+    --secondary-glow: 285 100% 70%;
+
+    --muted: 240 5% 15%;
+    --muted-foreground: 180 30% 65%;
+
+    --accent: 187 100% 50%;
+    --accent-foreground: 240 10% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 180 100% 90%;
+
+    --border: 240 8% 15%;
+    --input: 240 8% 12%;
+    --ring: 187 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Cybernetic Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-glow: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--secondary-glow)));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--background)), hsl(240 8% 2%));
+
+    /* Shadows and Effects */
+    --shadow-neon: 0 0 20px hsl(var(--primary) / 0.3);
+    --shadow-neon-strong: 0 0 40px hsl(var(--primary) / 0.5), 0 0 80px hsl(var(--primary) / 0.3);
+    --shadow-magenta: 0 0 20px hsl(var(--secondary) / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--background) / 0.8);
+
+    /* Typography Scale */
+    --font-display: 'Montserrat', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-display);
+    overflow-x: hidden;
+  }
+
+  /* Cybernetic Effects and Animations */
+  .neon-glow {
+    box-shadow: var(--shadow-neon);
+    transition: var(--transition-smooth);
+  }
+
+  .neon-glow:hover {
+    box-shadow: var(--shadow-neon-strong);
+  }
+
+  .text-neon {
+    color: hsl(var(--primary));
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  }
+
+  .text-magenta {
+    color: hsl(var(--secondary));
+    text-shadow: 0 0 10px hsl(var(--secondary) / 0.5);
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .cybernetic-border {
+    border: 1px solid hsl(var(--border));
+    position: relative;
+  }
+
+  .cybernetic-border::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: var(--gradient-primary);
+    border-radius: inherit;
+    opacity: 0;
+    transition: var(--transition-smooth);
+    z-index: -1;
+  }
+
+  .cybernetic-border:hover::before {
+    opacity: 0.3;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-neon {
+    0%, 100% { box-shadow: var(--shadow-neon); }
+    50% { box-shadow: var(--shadow-neon-strong); }
+  }
+
+  @keyframes data-flow {
+    0% { transform: translateX(-100px) scale(0.8); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(calc(100vw + 100px)) scale(1.2); opacity: 0; }
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    0%, 50% { border-color: transparent; }
+    51%, 100% { border-color: hsl(var(--primary)); }
+  }
+
+  .typing-animation {
+    overflow: hidden;
+    border-right: 2px solid hsl(var(--primary));
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink 1s infinite;
+  }
+
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .pulse-neon-animation {
+    animation: pulse-neon 2s ease-in-out infinite;
+  }
+
+  .data-flow-animation {
+    animation: data-flow 4s linear infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.3);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.5);
+  }
+
+  /* Workflow specific styles */
+  .workflow-progress-fill {
+    width: var(--progress-width, 0%);
+  }
+
+  .workflow-instructions-delay {
+    animation-delay: 0.5s;
+  }
+}
