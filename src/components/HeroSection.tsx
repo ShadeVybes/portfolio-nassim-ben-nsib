@@ -14,6 +14,9 @@ const HeroSection = () => {
     let timeoutId: NodeJS.Timeout;
     let index = 0;
 
+    // Reset display text when fullText changes
+    setDisplayText('');
+
     const typeText = () => {
       if (index < fullText.length) {
         setDisplayText(fullText.slice(0, index + 1));
@@ -26,7 +29,7 @@ const HeroSection = () => {
     timeoutId = setTimeout(typeText, 1000);
 
     return () => clearTimeout(timeoutId);
-  }, []);
+  }, [fullText]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);

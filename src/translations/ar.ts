@@ -11,7 +11,7 @@ export default {
 
   // Hero Section
   'hero.title': 'المهندس السيبراني',
-  'hero.subtitle': 'بناء المناظر الرقمية للمستقبل',
+  'hero.subtitle': 'مهندس DevOps ومطور Full-Stack',
   'hero.description': 'تحويل الأفكار إلى تجارب رقمية قوية من خلال التكنولوجيا المتطورة والتصميم المبتكر.',
   'hero.cta.primary': 'اكتشف أعمالي',
   'hero.cta.secondary': 'تواصل معي',
@@ -119,7 +119,7 @@ export default {
 
   // Footer
   'footer.rights': 'جميع الحقوق محفوظة.',
-  'footer.description': 'المهندس السيبراني - بناء المناظر الرقمية للمستقبل',
+  'footer.description': 'مهندس DevOps ومطور Full-Stack - متخصص في تقنيات السحابة والخدمات المصغرة وتكامل الذكاء الاصطناعي',
 
   // Theme Switcher
   'theme.light': 'فاتح',

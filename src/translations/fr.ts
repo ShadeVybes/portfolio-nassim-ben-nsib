@@ -19,7 +19,7 @@ export default {
 
   // Hero Section
   'hero.title': 'Architecte Cybernétique',
-  'hero.subtitle': 'Construire les Paysages Numériques de Demain',
+  'hero.subtitle': 'Ingénieur DevOps & Développeur Full-Stack',
   'hero.description': 'Transformer les idées en expériences numériques puissantes grâce à une technologie de pointe et un design innovant.',
   'hero.cta.primary': 'Découvrir Mon Travail',
   'hero.cta.secondary': 'Me Contacter',
@@ -119,7 +119,7 @@ export default {
 
   // Footer
   'footer.rights': 'Tous droits réservés.',
-  'footer.description': 'Architecte Cybernétique - Construire les Paysages Numériques de Demain',
+  'footer.description': 'Ingénieur DevOps & Développeur Full-Stack - Spécialisé dans les technologies cloud, microservices et intégration IA',
 
   // Theme Switcher
   'theme.light': 'Clair',

@@ -11,7 +11,7 @@ export default {
 
   // Hero Section
   'hero.title': 'Cybernetic Architect',
-  'hero.subtitle': 'Building Tomorrow\'s Digital Landscapes',
+  'hero.subtitle': 'DevOps Engineer & Full-Stack Developer',
   'hero.description': 'Transforming ideas into powerful digital experiences through cutting-edge technology and innovative design.',
   'hero.cta.primary': 'Explore My Work',
   'hero.cta.secondary': 'Get In Touch',
@@ -119,7 +119,7 @@ export default {
 
   // Footer
   'footer.rights': 'All rights reserved.',
-  'footer.description': 'Cybernetic Architect - Building Tomorrow\'s Digital Landscapes',
+  'footer.description': 'DevOps Engineer & Full-Stack Developer - Specializing in cloud technologies, microservices, and AI integration',
 
   // Theme Switcher
   'theme.light': 'Light',
