@@ -1,19 +1,21 @@
 export default {
   // Navigation
-  'nav.  // Experience Section
-  'experience.title': 'Expérience Professionnelle',
-  'experience.subtitle': 'Parcours de Carrière et Réalisations',
-  'experience.present': 'Présent',
-  'experience.years': 'années',
-  'experience.year': 'année',
-  'experience.cta': 'Prêt à discuter de la façon dont mon expérience peut bénéficier à votre projet ?', 'Accueil',
+  'nav.home': 'Accueil',
   'nav.about': 'À Propos',
   'nav.academic': 'Académique',
   'nav.projects': 'Projets',
   'nav.skills': 'Compétences',
   'nav.experience': 'Expérience',
   'nav.contact': 'Contact',
-  'nav.workflow': 'Processus',
+  'nav.workflow': 'Flux de Travail',
+
+  // Experience Section
+  'experience.title': 'Expérience Professionnelle',
+  'experience.subtitle': 'Parcours de Carrière et Réalisations',
+  'experience.present': 'Présent',
+  'experience.years': 'années',
+  'experience.year': 'année',
+  'experience.cta': 'Prêt à discuter de la façon dont mon expérience peut bénéficier à votre projet ?',
 
   // Hero Section
   'hero.title': 'Architecte Cybernétique',
@@ -45,14 +47,6 @@ export default {
   'skills.backend': 'Développement Backend',
   'skills.database': 'Gestion de Base de Données',
   'skills.tools': 'Outils de Développement',
-
-  // Experience Section
-  'experience.title': 'Expérience Professionnelle',
-  'experience.subtitle': 'Parcours de Carrière & Réalisations',
-  'experience.present': 'Présent',
-  'experience.years': 'années',
-  'experience.year': 'année',
-  'experience.cta': 'Prêt à discuter de la façon dont mon expérience peut bénéficier à votre projet ?',
 
   // Experience Data
   'experience.remotion.company': 'ReMotion',
