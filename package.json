@@ -2,8 +2,14 @@
   "name": "shade-vybes-portfolio",
   "author": {
     "name": "Nassim Ben Nsib",
-    "email": "nassim.bennsib@hotmail.com"
+    "email": "nassim.bennsib@hotmail.com",
+    "url": "https://github.com/ShadeVybes"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShadeVybes/cybernetic-architect-v1"
+  },
+  "homepage": "https://nassim-bennsib.tech",
   "private": true,
   "version": "0.0.0",
   "type": "module",

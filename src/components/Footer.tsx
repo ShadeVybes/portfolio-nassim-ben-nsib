@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/ShadeVybes"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-primary/20 hover:bg-primary/30 rounded-lg transition-colors neon-glow"
@@ -25,7 +25,7 @@ const Footer = () => {
                 <Github className="w-5 h-5 text-primary" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/shade-vybes"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-primary/20 hover:bg-primary/30 rounded-lg transition-colors neon-glow"
@@ -33,7 +33,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5 text-primary" />
               </a>
               <a
-                href="mailto:contact@nassim.dev"
+                href="mailto:nassim.bennsib@hotmail.com"
                 className="p-2 bg-primary/20 hover:bg-primary/30 rounded-lg transition-colors neon-glow"
               >
                 <Mail className="w-5 h-5 text-primary" />

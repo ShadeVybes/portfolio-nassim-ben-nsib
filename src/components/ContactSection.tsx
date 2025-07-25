@@ -77,9 +77,14 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Email</p>
-                    <a href="mailto:nassim.bennsib@hotmail.com" className="text-primary hover:text-primary-glow transition-colors">
-                      nassim.bennsib@hotmail.com
-                    </a>
+                    <div className="space-y-1">
+                      <a href="mailto:nassim.bennsib@hotmail.com" className="text-primary hover:text-primary-glow transition-colors block">
+                        nassim.bennsib@hotmail.com
+                      </a>
+                      <a href="mailto:shade.vybes@gmail.com" className="text-primary hover:text-primary-glow transition-colors block text-sm">
+                        shade.vybes@gmail.com
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -113,7 +118,7 @@ const ContactSection = () => {
               
               <div className="flex gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/ShadeVybes"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 bg-primary/10 hover:bg-primary/20 rounded-lg border border-primary/30 hover:border-primary/50 transition-all duration-300 flex-1 neon-glow"
@@ -126,7 +131,7 @@ const ContactSection = () => {
                 </a>
 
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/shade-vybes"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 bg-primary/10 hover:bg-primary/20 rounded-lg border border-primary/30 hover:border-primary/50 transition-all duration-300 flex-1 neon-glow"

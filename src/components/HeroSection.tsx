@@ -72,7 +72,7 @@ const HeroSection = () => {
       {/* Social links - top right */}
       <div className="absolute top-8 right-8 flex gap-4 z-10">
         <a
-          href="https://github.com"
+          href="https://github.com/ShadeVybes"
           target="_blank"
           rel="noopener noreferrer"
           className="p-3 rounded-full bg-card/20 backdrop-blur-sm border border-primary/20 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 neon-glow"
@@ -80,7 +80,7 @@ const HeroSection = () => {
           <Github className="w-5 h-5 text-foreground" />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/shade-vybes"
           target="_blank"
           rel="noopener noreferrer"
           className="p-3 rounded-full bg-card/20 backdrop-blur-sm border border-primary/20 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 neon-glow"
@@ -88,7 +88,7 @@ const HeroSection = () => {
           <Linkedin className="w-5 h-5 text-foreground" />
         </a>
         <a
-          href="mailto:contact@nassim.dev"
+          href="mailto:nassim.bennsib@hotmail.com"
           className="p-3 rounded-full bg-card/20 backdrop-blur-sm border border-primary/20 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 neon-glow"
         >
           <Mail className="w-5 h-5 text-foreground" />
